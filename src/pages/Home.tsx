@@ -1,6 +1,6 @@
-
 import { Link } from "react-router-dom";
 import SiteHeader from "@/components/SiteHeader";
+import NewsletterDialog from "@/components/NewsletterDialog";
 
 // You can edit these banner configs to change their titles or backgrounds in the future
 const BANNERS = [
@@ -103,6 +103,7 @@ const Banner = ({
 const Home = () => {
   return (
     <main className="min-h-screen bg-background text-foreground font-sans flex flex-col">
+      <NewsletterDialog />
       <SiteHeader />
       {/* Animated banners directly below the heading */}
       <div className="w-full flex flex-col gap-8 my-8">
@@ -130,4 +131,3 @@ const Home = () => {
 };
 
 export default Home;
-
