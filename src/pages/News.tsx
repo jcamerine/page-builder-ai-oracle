@@ -6,7 +6,7 @@ const News = () => (
     <SiteHeader />
     <div className="flex flex-col items-center flex-1 py-10">
       <section className="max-w-2xl w-full mx-auto animate-fade-in px-6">
-        <h1 className="text-4xl font-serif font-bold mb-6 text-center">Latest News</h1>
+        <h1 className="text-4xl font-serif font-bold mb-6 text-center uppercase">Latest News</h1>
         <div className="bg-secondary p-6 rounded-xl shadow-inner text-base md:text-lg text-secondary-foreground text-center">
           <p>
             Stay updated on book launches, signing events, bonus chapters, and special fan-only releases.
@@ -21,3 +21,4 @@ const News = () => (
 );
 
 export default News;
+

@@ -6,7 +6,7 @@ const About = () => (
     <SiteHeader />
     <div className="flex flex-col items-center justify-center flex-1 py-10">
       <section className="max-w-2xl w-full mx-auto animate-fade-in px-6">
-        <h1 className="text-4xl font-serif font-bold mb-6 text-center">About J.C. Amerine</h1>
+        <h1 className="text-4xl font-serif font-bold mb-6 text-center uppercase">About J.C. Amerine</h1>
         <div className="text-lg text-muted-foreground mb-4 text-center">
           Journey through epic worlds with an author who weaves adventure, emotion, and magic into every tale.
         </div>
@@ -26,3 +26,4 @@ const About = () => (
 );
 
 export default About;
+

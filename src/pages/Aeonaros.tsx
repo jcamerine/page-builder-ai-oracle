@@ -6,7 +6,7 @@ const Aeonaros = () => (
     <SiteHeader />
     <div className="flex flex-col items-center flex-1 py-10">
       <section className="max-w-3xl w-full mx-auto animate-fade-in px-6">
-        <h1 className="text-4xl font-serif font-bold mb-6 text-center">Aeonaros Saga</h1>
+        <h1 className="text-4xl font-serif font-bold mb-6 text-center uppercase">Aeonaros Saga</h1>
         <div className="bg-secondary p-6 rounded-xl shadow-inner text-base md:text-lg text-secondary-foreground text-center">
           <p>
             Venture into the mythical lands of Aeonaros—a world of warring kingdoms, ancient magic, and forbidden loves. Discover lore, maps, exclusive artwork, and behind-the-scenes peeks at the saga&apos;s creation.
@@ -21,3 +21,4 @@ const Aeonaros = () => (
 );
 
 export default Aeonaros;
+

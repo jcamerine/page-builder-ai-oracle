@@ -27,7 +27,7 @@ const Store = () => (
   <main className="min-h-screen bg-background text-foreground flex flex-col">
     <SiteHeader />
     <div className="flex flex-col items-center flex-1 py-10 px-4">
-      <h1 className="text-4xl font-serif font-bold mb-8 drop-shadow text-center">Store</h1>
+      <h1 className="text-4xl font-serif font-bold mb-8 drop-shadow text-center uppercase">Store</h1>
       <p className="text-muted-foreground text-xl font-medium mb-10 text-center max-w-2xl">Add bookish treasures, signed copies, and saga-inspired gifts to your collection. New merch drops soon!</p>
       <div className="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full max-w-6xl animate-fade-in">
         {products.map((item, idx) => (
@@ -45,7 +45,7 @@ const Store = () => (
               </div>
             )}
             <CardHeader>
-              <CardTitle className="text-2xl text-primary tracking-wide mb-1">{item.title}</CardTitle>
+              <CardTitle className="text-2xl text-primary tracking-wide mb-1 uppercase">{item.title}</CardTitle>
             </CardHeader>
             <CardContent className="grow">
               <div className="font-semibold text-lg text-accent-foreground mb-2">{item.price}</div>
