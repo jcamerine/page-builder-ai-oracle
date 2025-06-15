@@ -7,13 +7,13 @@ const products = [
   {
     title: "Signed Hardcover (Aeonaros #1)",
     price: "$28.00",
-    image: "", // Add image URL here later
+    image: "",
     description: "A signed hardcover edition of The Knight's Facade. Limited stock. Includes exclusive bookmark.",
   },
   {
     title: "Enamel Pin: Aeonaros Sigil",
     price: "$12.00",
-    image: "", // Add image URL here later
+    image: "",
     description: "Rep your favorite saga with a beautiful enamel pin—gold finish, double-posted back.",
   },
   {
@@ -28,12 +28,10 @@ const Store = () => (
   <main className="min-h-screen bg-background text-foreground flex flex-col">
     <SiteHeader />
     <div className="flex flex-col items-center flex-1 py-10 px-4">
-      <h1 className="text-4xl font-serif font-bold mb-8 drop-shadow text-center uppercase">Store</h1>
       <div className="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full max-w-6xl animate-fade-in">
         {products.map((item, idx) => (
           <Card key={item.title} className="flex flex-col h-full shadow-md border hover:shadow-lg transition-shadow duration-200">
             {item.image ? (
-              // Item image placeholder
               <img
                 src={item.image}
                 alt={item.title}

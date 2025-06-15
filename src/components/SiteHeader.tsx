@@ -5,8 +5,7 @@ const NAV_LINKS = [
   { label: "Home", path: "/" },
   { label: "About", path: "/about" },
   { label: "Books", path: "/books" },
-  { label: "Aeonaros", path: "/aeonaros" },
-  { label: "Store", path: "/store" },
+  // Removed Aeonaros and Store links
   { label: "News", path: "/news" },
   { label: "Contact", path: "/contact" },
 ];

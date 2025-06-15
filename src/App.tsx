@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -10,8 +9,6 @@ import Home from "@/pages/Home";
 import NewsletterSignupPage from "@/pages/NewsletterSignupPage";
 import About from "@/pages/About";
 import Books from "@/pages/Books";
-import Aeonaros from "@/pages/Aeonaros";
-import Store from "@/pages/Store";
 import News from "@/pages/News";
 import Contact from "@/pages/Contact";
 
@@ -28,8 +25,6 @@ const App = () => (
           <Route path="/newsletter" element={<NewsletterSignupPage />} />
           <Route path="/about" element={<About />} />
           <Route path="/books" element={<Books />} />
-          <Route path="/aeonaros" element={<Aeonaros />} />
-          <Route path="/store" element={<Store />} />
           <Route path="/news" element={<News />} />
           <Route path="/contact" element={<Contact />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
