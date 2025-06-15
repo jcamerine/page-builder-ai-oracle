@@ -1,3 +1,4 @@
+
 import SiteHeader from "@/components/SiteHeader";
 import PageBanner from "@/components/PageBanner";
 import SocialIcons from "@/components/SocialIcons";
@@ -11,8 +12,9 @@ const Books = () => (
     <PageBanner
       title="Books by J.C. Amerine"
       subtitle="Epic Fantasy Romance Books • The Aeonaros Saga"
-      imageUrl="https://images.unsplash.com/photo-1426604966848-d7adac402bff?auto=format&fit=crop&w=1200&q=80"
-      imageAlt="Mountain landscape for books collection"
+      // Dire wolf lookalike - wolf in nature, strong fantasy energy
+      imageUrl="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80"
+      imageAlt="Dire wolf fantasy wolf image"
     />
     <div className="flex flex-col items-center flex-1 py-10">
       <section className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl w-full px-4 animate-fade-in">

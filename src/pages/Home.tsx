@@ -11,7 +11,8 @@ const BANNERS = [
     title: "Welcome Readers!",
     subtitle: "Enter the world of J.C. Amerine",
     gradient: "bg-gradient-to-tr from-blue-800 via-purple-900 to-cyan-600",
-    gif: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1200&q=80",
+    // Giant bear (Unsplash public domain)
+    gif: "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=1200&q=80", // Large brown bear, suggestive of a giant bear
     minHeight: 300,
     heightClass: "h-[55vh] md:h-[60vh]",
     editable: true,
@@ -21,7 +22,8 @@ const BANNERS = [
     title: "Step Into Epic Fantasy",
     subtitle: "Magic, Romance & Adventure Await",
     gradient: "bg-gradient-to-br from-indigo-900 via-pink-700/80 to-yellow-700",
-    gif: "https://images.unsplash.com/photo-1426604966848-d7adac402bff?auto=format&fit=crop&w=1200&q=80",
+    // Griffin (fantasy eagle, suggestive)
+    gif: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80", // Eagle image, gives 'griffin' vibes
     minHeight: 300,
     heightClass: "h-[55vh] md:h-[60vh]",
     editable: true,
@@ -41,7 +43,8 @@ const BANNERS = [
     title: "[Future Banner Placeholder]",
     subtitle: "You can edit this banner later to add more highlights or info.",
     gradient: "bg-gradient-to-br from-gray-800 via-gray-900/80 to-blue-900",
-    gif: "https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?auto=format&fit=crop&w=1200&q=80",
+    // Leviathan / Sea Monster
+    gif: "https://images.unsplash.com/photo-1518877593221-1f28583780b4?auto=format&fit=crop&w=1200&q=80", // Whale leaping from sea, representing Leviathan/Kraken
     minHeight: 300,
     heightClass: "h-[55vh] md:h-[60vh]",
     editable: true,

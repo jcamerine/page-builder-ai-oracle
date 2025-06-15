@@ -1,3 +1,4 @@
+
 import SiteHeader from "@/components/SiteHeader";
 import PageBanner from "@/components/PageBanner";
 import Footer from "@/components/Footer";
@@ -10,8 +11,9 @@ const About = () => (
     <PageBanner
       title="About J.C. Amerine"
       subtitle="Discover the journey and worldbuilding of an epic fantasy author"
-      imageUrl="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1200&q=80"
-      imageAlt="Foggy mountain vista"
+      // Centaur/horse symbolic (horse in foggy forest, suggestive of centaur myth)
+      imageUrl="https://images.unsplash.com/photo-1439886183900-e79ec0057170?auto=format&fit=crop&w=1200&q=80"
+      imageAlt="Centaur inspired misty forest horse"
     />
     <div className="flex flex-col items-center justify-center flex-1 py-10">
       <section className="max-w-2xl w-full mx-auto animate-fade-in px-6">

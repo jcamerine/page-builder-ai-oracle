@@ -1,3 +1,4 @@
+
 import SiteHeader from "@/components/SiteHeader";
 import PageBanner from "@/components/PageBanner";
 import Footer from "@/components/Footer";
@@ -10,8 +11,9 @@ const News = () => (
     <PageBanner
       title="Latest News"
       subtitle="Stay in the loop for launches, events, exclusives, and more"
-      imageUrl="https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?auto=format&fit=crop&w=1200&q=80"
-      imageAlt="Sunbeams in forest for news"
+      // Chimera-inspired - multiple animals, wild/magical vibe (lion; it's challenging to find public domain "chimera")
+      imageUrl="https://images.unsplash.com/photo-1465101162946-4377e57745c3?auto=format&fit=crop&w=1200&q=80"
+      imageAlt="Chimera inspired lion"
     />
     <div className="flex flex-col items-center flex-1 py-10">
       <section className="max-w-2xl w-full mx-auto animate-fade-in px-6">

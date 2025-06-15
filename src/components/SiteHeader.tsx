@@ -2,8 +2,9 @@
 import { Link, useLocation } from "react-router-dom";
 
 // To use your own image, upload it to the project and point src to "/yourimage.jpg" or "/yourimage.png".
-const AUTHOR_IMAGE_SRC = "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=facearea&w=320&h=100&facepad=4&q=80";
-const AUTHOR_IMAGE_ALT = "J.C. Amerine author logo";
+// Griffin - majestic eagle-as-griffin
+const AUTHOR_IMAGE_SRC = "https://images.unsplash.com/photo-1454023492550-5696f8ff10e1?auto=format&fit=facearea&w=320&h=100&q=80"; // Bald eagle closeup, invoking griffin feels
+const AUTHOR_IMAGE_ALT = "J.C. Amerine griffin/author logo";
 
 const NAV_LINKS = [
   { label: "Home", path: "/" },
