@@ -1,8 +1,8 @@
-
 import SiteHeader from "@/components/SiteHeader";
 import PageBanner from "@/components/PageBanner";
 import SocialIcons from "@/components/SocialIcons";
 import Footer from "@/components/Footer";
+import NewsletterSection from "@/components/NewsletterSection";
 
 const Books = () => (
   <main className="min-h-screen bg-background flex flex-col">
@@ -79,6 +79,7 @@ const Books = () => (
         <SocialIcons large />
       </div>
     </div>
+    <NewsletterSection />
     <Footer />
   </main>
 );

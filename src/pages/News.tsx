@@ -1,7 +1,7 @@
-
 import SiteHeader from "@/components/SiteHeader";
 import PageBanner from "@/components/PageBanner";
 import Footer from "@/components/Footer";
+import NewsletterSection from "@/components/NewsletterSection";
 
 const News = () => (
   <main className="min-h-screen flex flex-col bg-background">
@@ -24,6 +24,7 @@ const News = () => (
         </div>
       </section>
     </div>
+    <NewsletterSection />
     <Footer />
   </main>
 );
