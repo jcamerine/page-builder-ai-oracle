@@ -1,12 +1,18 @@
 
 import SiteHeader from "@/components/SiteHeader";
+import PageBanner from "@/components/PageBanner";
 
 const Contact = () => (
   <main className="min-h-screen flex flex-col bg-background">
     <SiteHeader />
+    <PageBanner
+      title="Contact J.C. Amerine"
+      subtitle="For media, events, or reader messages—let’s connect"
+      imageUrl="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80"
+      imageAlt="Laptop and desk for contact"
+    />
     <div className="flex flex-col items-center flex-1 py-10">
       <section className="max-w-xl w-full mx-auto animate-fade-in px-6">
-        <h1 className="text-4xl font-serif font-bold mb-6 text-center uppercase">Contact J.C. Amerine</h1>
         <div className="bg-secondary p-6 rounded-xl shadow-inner text-base md:text-lg text-secondary-foreground text-center">
           <p>
             For event bookings, media inquiries, or reader messages, reach out below. J.C. Amerine loves hearing from fellow adventurers!
@@ -29,4 +35,3 @@ const Contact = () => (
 );
 
 export default Contact;
-
