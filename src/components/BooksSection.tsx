@@ -43,26 +43,28 @@ const BooksSection = () => (
           <p className="mb-4 text-center text-base text-muted-foreground min-h-[64px] flex items-center justify-center">
             {book.description}
           </p>
-          <div className="flex gap-4 mt-auto">
+          <div className="flex gap-4 mt-auto w-full justify-center">
             <a
               href={book.amazonUrl}
               target="_blank"
               rel="noopener noreferrer"
               aria-label={`${book.amazonLabel} (opens in new tab)`}
-              className="text-white bg-primary/90 hover:bg-primary px-4 py-2 rounded transition shadow flex gap-2 items-center focus-visible:outline focus-visible:ring-2 focus-visible:ring-primary"
+              className="text-white bg-primary hover:bg-primary/95 active:bg-primary/90 px-4 py-2 rounded transition shadow flex gap-2 items-center focus-visible:outline focus-visible:ring-2 focus-visible:ring-primary"
+              style={{ minWidth: 0 }}
             >
               {book.amazonLabel}
-              <ExternalLink size={18} className="ml-1" aria-hidden="true" />
+              <ExternalLink size={18} className="ml-1" color="#FFF" aria-hidden="true" />
             </a>
             <a
               href={book.goodreadsUrl}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="View on Goodreads (opens in new tab)"
-              className="text-accent bg-secondary hover:bg-accent px-4 py-2 rounded transition shadow flex gap-2 items-center focus-visible:outline focus-visible:ring-2 focus-visible:ring-primary"
+              className="bg-accent text-primary hover:bg-accent/80 px-4 py-2 rounded transition shadow flex gap-2 items-center focus-visible:outline focus-visible:ring-2 focus-visible:ring-primary"
+              style={{ minWidth: 0 }}
             >
               Goodreads
-              <ExternalLink size={18} className="ml-1" aria-hidden="true" />
+              <ExternalLink size={18} className="ml-1" color="#111" aria-hidden="true" />
             </a>
           </div>
         </div>
@@ -72,3 +74,4 @@ const BooksSection = () => (
 );
 
 export default BooksSection;
+

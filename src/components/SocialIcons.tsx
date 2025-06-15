@@ -14,6 +14,14 @@ const SocialIcons = ({ large }: SocialIconsProps) => {
      border p-2 shadow hover:scale-105 active:scale-95
      `;
 
+  // Set highly visible, contrasting external icon for all links that open in new tab
+  const externalIconProps = (bg: string) => ({
+    size: large ? 20 : 14,
+    className: "ml-1",
+    color: bg === "dark" ? "#FFF" : "#111",
+    "aria-hidden": "true",
+  });
+
   return (
     <div className="flex gap-3 items-center">
       {/* Amazon */}
@@ -22,13 +30,13 @@ const SocialIcons = ({ large }: SocialIconsProps) => {
         rel="noopener noreferrer"
         aria-label="Amazon (opens in new tab)"
         target="_blank"
-        className={`${baseLinkClass} bg-primary/90 border-primary text-white hover:bg-primary`}
+        className={`${baseLinkClass} bg-primary border-primary text-white hover:bg-primary`}
       >
         <svg className={iconClass} fill="currentColor" viewBox="0 0 24 24">
           <ellipse cx="12" cy="12" rx="10" ry="10" fill="#FF9900" />
           <text x="12" y="15" fontSize="9" fill="white" textAnchor="middle" fontFamily="Verdana">a</text>
         </svg>
-        <ExternalLink size={large ? 20 : 14} className="ml-1" aria-hidden="true" />
+        <ExternalLink {...externalIconProps("dark")} />
       </a>
       {/* Goodreads */}
       <a
@@ -36,14 +44,13 @@ const SocialIcons = ({ large }: SocialIconsProps) => {
         rel="noopener noreferrer"
         aria-label="Goodreads (opens in new tab)"
         target="_blank"
-        className={`${baseLinkClass} bg-secondary border-accent text-accent hover:bg-accent`}
+        className={`${baseLinkClass} bg-accent border-accent text-primary hover:bg-accent/90`}
       >
         <svg className={iconClass} fill="currentColor" viewBox="0 0 24 24">
           <ellipse cx="12" cy="12" rx="10" ry="10" fill="#382110" />
           <text x="12" y="15" fontSize="8" fill="white" textAnchor="middle" fontFamily="Georgia">g</text>
         </svg>
-        {/* Always show external icon */}
-        <ExternalLink size={large ? 20 : 14} className="ml-1" aria-hidden="true" />
+        <ExternalLink {...externalIconProps("light")} />
       </a>
       {/* TikTok */}
       <a
@@ -66,7 +73,7 @@ const SocialIcons = ({ large }: SocialIconsProps) => {
             <circle cx="20" cy="30.25" r="1" fill="#25F4EE"/>
           </g>
         </svg>
-        <ExternalLink size={large ? 20 : 14} className="ml-1 invisible group-hover:visible" aria-hidden="true" />
+        <ExternalLink {...externalIconProps("light")} />
       </a>
       {/* Instagram */}
       <a
@@ -78,7 +85,7 @@ const SocialIcons = ({ large }: SocialIconsProps) => {
         title="Instagram"
       >
         <Instagram className={iconClass} color={iconColor} />
-        <ExternalLink size={large ? 20 : 14} className="ml-1 invisible group-hover:visible" aria-hidden="true" />
+        <ExternalLink {...externalIconProps("light")} />
       </a>
     </div>
   );

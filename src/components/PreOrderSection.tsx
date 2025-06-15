@@ -12,10 +12,10 @@ const PreOrderSection = () => (
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Pre-Order on Amazon (opens in new tab)"
-      className="bg-primary text-primary-foreground px-8 py-3 rounded-lg shadow hover:bg-primary/90 focus:bg-primary/80 font-semibold text-lg flex items-center gap-2 transition-colors focus-visible:outline focus-visible:ring-2 focus-visible:ring-primary"
+      className="bg-primary text-white hover:bg-primary/95 active:bg-primary/90 px-8 py-3 rounded-lg shadow hover:bg-primary/90 focus:bg-primary/80 font-semibold text-lg flex items-center gap-2 transition-colors focus-visible:outline focus-visible:ring-2 focus-visible:ring-primary"
     >
       Pre-Order on Amazon
-      <ExternalLink size={20} aria-hidden="true" />
+      <ExternalLink size={20} color="#FFF" aria-hidden="true" />
     </a>
   </section>
 );
