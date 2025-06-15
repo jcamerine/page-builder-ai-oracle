@@ -28,7 +28,7 @@ const SocialIcons = ({ large }: SocialIconsProps) => {
           <ellipse cx="12" cy="12" rx="10" ry="10" fill="#FF9900" />
           <text x="12" y="15" fontSize="9" fill="white" textAnchor="middle" fontFamily="Verdana">a</text>
         </svg>
-        <ExternalLink size={large ? 20 : 14} className="ml-1 invisible group-hover:visible" aria-hidden="true" />
+        <ExternalLink size={large ? 20 : 14} className="ml-1" aria-hidden="true" />
       </a>
       {/* Goodreads */}
       <a
@@ -42,7 +42,8 @@ const SocialIcons = ({ large }: SocialIconsProps) => {
           <ellipse cx="12" cy="12" rx="10" ry="10" fill="#382110" />
           <text x="12" y="15" fontSize="8" fill="white" textAnchor="middle" fontFamily="Georgia">g</text>
         </svg>
-        <ExternalLink size={large ? 20 : 14} className="ml-1 invisible group-hover:visible" aria-hidden="true" />
+        {/* Always show external icon */}
+        <ExternalLink size={large ? 20 : 14} className="ml-1" aria-hidden="true" />
       </a>
       {/* TikTok */}
       <a
