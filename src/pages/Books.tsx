@@ -1,9 +1,11 @@
+
 import SiteHeader from "@/components/SiteHeader";
 import PageBanner from "@/components/PageBanner";
 import SocialIcons from "@/components/SocialIcons";
 import Footer from "@/components/Footer";
 import NewsletterSection from "@/components/NewsletterSection";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
+import { ExternalLink } from "lucide-react";
 
 const Books = () => (
   <main className="min-h-screen bg-background flex flex-col">
@@ -32,17 +34,21 @@ const Books = () => (
               href="https://www.amazon.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white bg-primary/90 hover:bg-primary px-4 py-2 rounded transition shadow flex gap-2 items-center"
+              aria-label="Buy on Amazon (opens in new tab)"
+              className="text-white bg-primary/90 hover:bg-primary px-4 py-2 rounded transition shadow flex gap-2 items-center focus-visible:outline focus-visible:ring-2 focus-visible:ring-primary"
             >
               Buy on Amazon
+              <ExternalLink size={18} className="ml-1" aria-hidden="true" />
             </a>
             <a
               href="https://www.goodreads.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-accent bg-secondary hover:bg-accent px-4 py-2 rounded transition shadow flex gap-2 items-center"
+              aria-label="View on Goodreads (opens in new tab)"
+              className="text-accent bg-secondary hover:bg-accent px-4 py-2 rounded transition shadow flex gap-2 items-center focus-visible:outline focus-visible:ring-2 focus-visible:ring-primary"
             >
               Goodreads
+              <ExternalLink size={18} className="ml-1" aria-hidden="true" />
             </a>
           </div>
         </div>
@@ -61,17 +67,21 @@ const Books = () => (
               href="https://www.amazon.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white bg-primary/90 hover:bg-primary px-4 py-2 rounded transition shadow flex gap-2 items-center"
+              aria-label="Pre-Order on Amazon (opens in new tab)"
+              className="text-white bg-primary/90 hover:bg-primary px-4 py-2 rounded transition shadow flex gap-2 items-center focus-visible:outline focus-visible:ring-2 focus-visible:ring-primary"
             >
               Pre-Order on Amazon
+              <ExternalLink size={18} className="ml-1" aria-hidden="true" />
             </a>
             <a
               href="https://www.goodreads.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-accent bg-secondary hover:bg-accent px-4 py-2 rounded transition shadow flex gap-2 items-center"
+              aria-label="View on Goodreads (opens in new tab)"
+              className="text-accent bg-secondary hover:bg-accent px-4 py-2 rounded transition shadow flex gap-2 items-center focus-visible:outline focus-visible:ring-2 focus-visible:ring-primary"
             >
               Goodreads
+              <ExternalLink size={18} className="ml-1" aria-hidden="true" />
             </a>
           </div>
         </div>
@@ -88,3 +98,4 @@ const Books = () => (
 );
 
 export default Books;
+

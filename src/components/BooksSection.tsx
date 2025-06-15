@@ -1,4 +1,6 @@
+
 import SocialIcons from "@/components/SocialIcons";
+import { ExternalLink } from "lucide-react";
 
 const BooksSection = () => (
   <section id="aeonaros" className="container mx-auto py-16 px-4 max-w-5xl animate-fade-in">
@@ -20,17 +22,21 @@ const BooksSection = () => (
             href="https://www.amazon.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white bg-primary/90 hover:bg-primary px-4 py-2 rounded transition shadow flex gap-2 items-center"
+            aria-label="Buy on Amazon (opens in new tab)"
+            className="text-white bg-primary/90 hover:bg-primary px-4 py-2 rounded transition shadow flex gap-2 items-center focus-visible:outline focus-visible:ring-2 focus-visible:ring-primary"
           >
             Buy on Amazon
+            <ExternalLink size={18} className="ml-1" aria-hidden="true" />
           </a>
           <a
             href="https://www.goodreads.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-accent bg-secondary hover:bg-accent px-4 py-2 rounded transition shadow flex gap-2 items-center"
+            aria-label="View on Goodreads (opens in new tab)"
+            className="text-accent bg-secondary hover:bg-accent px-4 py-2 rounded transition shadow flex gap-2 items-center focus-visible:outline focus-visible:ring-2 focus-visible:ring-primary"
           >
             Goodreads
+            <ExternalLink size={18} className="ml-1" aria-hidden="true" />
           </a>
         </div>
       </div>
@@ -50,17 +56,21 @@ const BooksSection = () => (
             href="https://www.amazon.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white bg-primary/90 hover:bg-primary px-4 py-2 rounded transition shadow flex gap-2 items-center"
+            aria-label="Pre-Order on Amazon (opens in new tab)"
+            className="text-white bg-primary/90 hover:bg-primary px-4 py-2 rounded transition shadow flex gap-2 items-center focus-visible:outline focus-visible:ring-2 focus-visible:ring-primary"
           >
             Pre-Order on Amazon
+            <ExternalLink size={18} className="ml-1" aria-hidden="true" />
           </a>
           <a
             href="https://www.goodreads.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-accent bg-secondary hover:bg-accent px-4 py-2 rounded transition shadow flex gap-2 items-center"
+            aria-label="View on Goodreads (opens in new tab)"
+            className="text-accent bg-secondary hover:bg-accent px-4 py-2 rounded transition shadow flex gap-2 items-center focus-visible:outline focus-visible:ring-2 focus-visible:ring-primary"
           >
             Goodreads
+            <ExternalLink size={18} className="ml-1" aria-hidden="true" />
           </a>
         </div>
       </div>
@@ -69,3 +79,4 @@ const BooksSection = () => (
 );
 
 export default BooksSection;
+

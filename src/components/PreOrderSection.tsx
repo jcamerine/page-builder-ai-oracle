@@ -1,4 +1,6 @@
 
+import { ExternalLink } from "lucide-react";
+
 const PreOrderSection = () => (
   <section id="preorder" className="container mx-auto py-16 px-4 max-w-3xl flex flex-col items-center animate-fade-in">
     <h2 className="text-2xl font-semibold font-serif mb-2 text-center">Pre-Order the Next Adventure</h2>
@@ -9,10 +11,13 @@ const PreOrderSection = () => (
       href="https://www.amazon.com/"
       target="_blank"
       rel="noopener noreferrer"
-      className="bg-primary text-primary-foreground px-8 py-3 rounded-lg shadow hover:bg-primary/90 font-semibold text-lg"
+      aria-label="Pre-Order on Amazon (opens in new tab)"
+      className="bg-primary text-primary-foreground px-8 py-3 rounded-lg shadow hover:bg-primary/90 focus:bg-primary/80 font-semibold text-lg flex items-center gap-2 transition-colors focus-visible:outline focus-visible:ring-2 focus-visible:ring-primary"
     >
       Pre-Order on Amazon
+      <ExternalLink size={20} aria-hidden="true" />
     </a>
   </section>
 );
 export default PreOrderSection;
+
