@@ -1,17 +1,28 @@
+
 import SiteHeader from "@/components/SiteHeader";
-import PageBanner from "@/components/PageBanner";
+import SlideshowBanner from "@/components/SlideshowBanner";
 import Footer from "@/components/Footer";
 import NewsletterSection from "@/components/NewsletterSection";
+
+const contactSlides = [
+  {
+    imageUrl: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Laptop and desk for contact",
+    title: "Contact J.C. Amerine",
+    subtitle: "For media, events, or reader messages—let’s connect",
+  },
+  {
+    imageUrl: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Contact forms open",
+    title: "Let's Stay in Touch",
+    subtitle: "Reach out with questions or feedback anytime",
+  },
+];
 
 const Contact = () => (
   <main className="min-h-screen flex flex-col bg-background">
     <SiteHeader />
-    <PageBanner
-      title="Contact J.C. Amerine"
-      subtitle="For media, events, or reader messages—let’s connect"
-      imageUrl="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80"
-      imageAlt="Laptop and desk for contact"
-    />
+    <SlideshowBanner slides={contactSlides} />
     <div className="flex flex-col items-center flex-1 py-10">
       <section className="max-w-xl w-full mx-auto animate-fade-in px-6">
         <div className="bg-secondary p-6 rounded-xl shadow-inner text-base md:text-lg text-secondary-foreground text-center">
