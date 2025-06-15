@@ -1,4 +1,3 @@
-
 import AuthorHero from "@/components/AuthorHero";
 import BooksSection from "@/components/BooksSection";
 import AboutSection from "@/components/AboutSection";
@@ -11,6 +10,17 @@ const Home = () => {
   return (
     <main className="min-h-screen bg-background text-foreground font-sans flex flex-col">
       <AuthorHero />
+
+      {/* CTA for newsletter signup */}
+      <div className="flex items-center justify-center bg-secondary py-4 shadow-sm border-b border-border">
+        <a
+          href="/newsletter"
+          className="bg-primary text-primary-foreground font-semibold rounded-lg px-6 py-3 text-lg shadow hover:bg-primary/90 transition-colors"
+        >
+          Get Free Chapters &amp; Updates
+        </a>
+      </div>
+
       <nav className="sticky top-0 z-30 bg-background/90 border-b border-border backdrop-blur-md shadow-sm">
         <div className="container mx-auto flex flex-wrap items-center justify-between py-3">
           <span
@@ -47,21 +57,42 @@ const Home = () => {
       </nav>
       {/* Add an id="home" anchor for Home navigation */}
       <div id="home"></div>
+
+      {/* Home Section (subheading) */}
+      <section className="container mx-auto py-14 px-4 max-w-4xl animate-fade-in">
+        <h2 className="text-3xl font-bold font-serif mb-4">Home</h2>
+        <p className="text-base text-muted-foreground">
+          Welcome to the official website of J.C. Amerine, author of epic fantasy romance novels. Explore worlds of love and war, magic and secrets, and dive into the Aeonaros saga and other captivating stories.
+        </p>
+      </section>
+
       <AboutSection />
-      {/* "Books" and "Aeonaros" now have separate anchors (Aeonaros is the renamed BooksSection) */}
-      <BooksSection />
-      {/* Store and News section: create anchor points for navigation, even if not yet implemented */}
+
+      {/* Books Section */}
+      <section id="books" className="container mx-auto py-16 px-4 max-w-4xl animate-fade-in">
+        <h2 className="text-3xl font-bold font-serif mb-4">Books</h2>
+        <BooksSection />
+      </section>
+
+      {/* Aeonaros saga section */}
+      <section id="aeonaros" className="container mx-auto py-16 px-4 max-w-4xl animate-fade-in">
+        <h2 className="text-3xl font-bold font-serif mb-4">Aeonaros</h2>
+        {/* The BooksSection already renders with heading "Aeonaros" */}
+        {/* If you want to add details about the Aeonaros saga here, you can add them later. */}
+      </section>
+
+      {/* Store Section */}
       <section id="store" className="container mx-auto py-16 px-4 max-w-4xl animate-fade-in">
         <h2 className="text-3xl font-bold font-serif mb-4">Store</h2>
         <p className="text-base text-muted-foreground">Coming soon: Shop for books, merchandise, and more.</p>
       </section>
-      {/* Aeonaros saga section (was "BooksSection") */}
-      {/* booksSection component will now use id="aeonaros" */}
-      <section id="aeonaros">
-        {/* The BooksSection already renders with heading "Aeonaros" */}
+
+      {/* News section - replaces NewsletterSection */}
+      <section id="news" className="container mx-auto py-16 px-4 max-w-2xl animate-fade-in">
+        <h2 className="text-2xl font-semibold font-serif text-center mb-2">News</h2>
+        <NewsletterSection />
       </section>
-      {/* News section - replace NewsletterSection */}
-      <NewsletterSection />
+
       <ContactSection />
       <footer className="bg-background mt-12 py-8 border-t border-border text-center text-sm text-muted-foreground">
         &copy; {new Date().getFullYear()} J.C. Amerine. All Rights Reserved. | jcamerine.com | jcamerine.com.au
