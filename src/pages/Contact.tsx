@@ -1,12 +1,7 @@
-
 import SiteHeader from "@/components/SiteHeader";
 import PageBanner from "@/components/PageBanner";
 import Footer from "@/components/Footer";
 import NewsletterSection from "@/components/NewsletterSection";
-import { Tiktok, Instagram } from "lucide-react";
-
-const ICON_STYLE =
-  "inline-block mx-1 align-middle transition hover:scale-110 hover:text-primary";
 
 const Contact = () => (
   <main className="min-h-screen flex flex-col bg-background">
@@ -23,18 +18,12 @@ const Contact = () => (
           <p>
             For event bookings, media inquiries, or reader messages, reach out below. J.C. Amerine loves hearing from fellow adventurers!
           </p>
-          <div className="mt-4 flex items-center justify-center gap-2">
+          <div className="mt-4">
             <a
               href="mailto:hello@jcamerine.com"
               className="text-primary font-semibold underline underline-offset-4 break-all"
             >
               hello@jcamerine.com
-            </a>
-            <a href="#" aria-label="TikTok" className={ICON_STYLE}>
-              <Tiktok size={22} color="black" strokeWidth={2} />
-            </a>
-            <a href="#" aria-label="Instagram" className={ICON_STYLE}>
-              <Instagram size={22} color="black" strokeWidth={2} />
             </a>
           </div>
           <div className="mt-6 flex justify-center">
@@ -49,4 +38,3 @@ const Contact = () => (
 );
 
 export default Contact;
-
