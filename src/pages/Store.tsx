@@ -1,3 +1,4 @@
+
 import SiteHeader from "@/components/SiteHeader";
 import { Card, CardHeader, CardTitle, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -28,7 +29,6 @@ const Store = () => (
     <SiteHeader />
     <div className="flex flex-col items-center flex-1 py-10 px-4">
       <h1 className="text-4xl font-serif font-bold mb-8 drop-shadow text-center uppercase">Store</h1>
-      <p className="text-muted-foreground text-xl font-medium mb-10 text-center max-w-2xl">Add bookish treasures, signed copies, and saga-inspired gifts to your collection. New merch drops soon!</p>
       <div className="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full max-w-6xl animate-fade-in">
         {products.map((item, idx) => (
           <Card key={item.title} className="flex flex-col h-full shadow-md border hover:shadow-lg transition-shadow duration-200">

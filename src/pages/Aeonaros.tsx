@@ -11,9 +11,6 @@ const Aeonaros = () => (
           <p>
             Venture into the mythical lands of Aeonaros—a world of warring kingdoms, ancient magic, and forbidden loves. Discover lore, maps, exclusive artwork, and behind-the-scenes peeks at the saga&apos;s creation.
           </p>
-          <p className="mt-3 font-medium text-accent-foreground">
-            Preview world lore, character art, and more will be coming to this page soon!
-          </p>
         </div>
       </section>
     </div>
@@ -21,4 +18,3 @@ const Aeonaros = () => (
 );
 
 export default Aeonaros;
-
