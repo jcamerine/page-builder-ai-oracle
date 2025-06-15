@@ -1,9 +1,8 @@
 
 import { Link, useLocation } from "react-router-dom";
 
-// For demo, use a placeholder image from Unsplash CDN, but swap the src as needed.
 // To use your own image, upload it to the project and point src to "/yourimage.jpg" or "/yourimage.png".
-const AUTHOR_IMAGE_SRC = "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=facearea&w=128&h=128&facepad=4&q=80";
+const AUTHOR_IMAGE_SRC = "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=facearea&w=320&h=100&facepad=4&q=80";
 const AUTHOR_IMAGE_ALT = "J.C. Amerine author logo";
 
 const NAV_LINKS = [
@@ -21,11 +20,13 @@ const SiteHeader = () => {
     <header className="sticky top-0 z-30 bg-background/95 border-b border-border backdrop-blur-md shadow-sm">
       <div className="container mx-auto flex flex-row items-center py-2 px-3 gap-8 md:gap-12">
         <Link to="/" className="block">
-          <img
-            src={AUTHOR_IMAGE_SRC}
-            alt={AUTHOR_IMAGE_ALT}
-            className="h-12 w-12 md:h-16 md:w-16 rounded-full object-cover border-2 border-primary shadow"
-          />
+          <div className="bg-primary/10 border-2 border-primary shadow w-[160px] h-[64px] md:w-[220px] md:h-[82px] flex items-center justify-center rounded-xl overflow-hidden">
+            <img
+              src={AUTHOR_IMAGE_SRC}
+              alt={AUTHOR_IMAGE_ALT}
+              className="object-cover w-full h-full"
+            />
+          </div>
         </Link>
         <nav aria-label="Site">
           <ul className="flex flex-wrap gap-3 md:gap-4 font-medium">
