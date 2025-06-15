@@ -19,7 +19,7 @@ const Books = () => (
       <section className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl w-full px-4 animate-fade-in">
         {/* Book 1 */}
         <div className="bg-card rounded-xl shadow-md p-6 flex flex-col items-center border hover:shadow-lg transition-shadow duration-200">
-          <div className="aspect-[2/3] w-40 bg-gray-200 rounded-lg mb-4 flex items-center justify-center text-muted-foreground font-semibold text-xl uppercase tracking-wider">
+          <div className="aspect-[2/3] w-40 bg-gray-200 rounded-lg mb-4 flex items-center justify-center text-muted-foreground font-semibold text-xl uppercase tracking-wider text-center">
             Coming Soon
           </div>
           <h3 className="text-2xl font-semibold mb-1 text-center uppercase">The Knight&apos;s Facade</h3>
@@ -48,7 +48,7 @@ const Books = () => (
         </div>
         {/* Book 2 */}
         <div className="bg-card rounded-xl shadow-md p-6 flex flex-col items-center border hover:shadow-lg transition-shadow duration-200">
-          <div className="aspect-[2/3] w-40 bg-gray-200 rounded-lg mb-4 flex items-center justify-center text-muted-foreground font-semibold text-xl uppercase tracking-wider">
+          <div className="aspect-[2/3] w-40 bg-gray-200 rounded-lg mb-4 flex items-center justify-center text-muted-foreground font-semibold text-xl uppercase tracking-wider text-center">
             Cover Reveal Soon!
           </div>
           <h3 className="text-2xl font-semibold mb-1 text-center uppercase">A Trio of Flames</h3>
