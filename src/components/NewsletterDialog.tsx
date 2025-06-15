@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from "react";
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogFooter, DialogClose } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogFooter } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { toast } from "@/hooks/use-toast";
@@ -61,9 +61,6 @@ const NewsletterDialog = () => {
             </Button>
           </DialogFooter>
         </form>
-        <DialogClose asChild>
-          <button className="absolute right-4 top-4 text-muted-foreground hover:text-foreground text-2xl" aria-label="Close">&times;</button>
-        </DialogClose>
         <div className="text-xs text-muted-foreground text-center mt-2">
           No spam. Unsubscribe anytime.
         </div>
