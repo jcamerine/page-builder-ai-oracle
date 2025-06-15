@@ -94,6 +94,7 @@ export default {
 				handwriting: ['Pacifico', 'cursive'],
 				radley: ['Radley', 'serif'],
 				playfair: ['"Playfair Display"', 'serif'],
+				montserrat: ['Montserrat', 'sans-serif'],
 			}
 		}
 	},

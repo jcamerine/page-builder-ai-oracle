@@ -29,7 +29,7 @@ const SiteHeader = () => {
           </div>
         </Link>
         <nav aria-label="Site">
-          <ul className="flex flex-wrap gap-3 md:gap-4 font-medium">
+          <ul className="flex flex-wrap gap-3 md:gap-4 font-montserrat uppercase tracking-wider">
             {NAV_LINKS.map((nav) => (
               <li key={nav.path}>
                 <Link
