@@ -93,6 +93,7 @@ export default {
 			fontFamily: {
 				handwriting: ['Pacifico', 'cursive'],
 				radley: ['Radley', 'serif'],
+				playfair: ['"Playfair Display"', 'serif'],
 			}
 		}
 	},

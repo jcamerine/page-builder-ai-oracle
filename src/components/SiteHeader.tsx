@@ -14,16 +14,17 @@ const SiteHeader = () => {
   const location = useLocation();
   return (
     <header className="sticky top-0 z-30 bg-background/95 border-b border-border backdrop-blur-md shadow-sm">
-      <div className="container mx-auto flex flex-wrap items-center justify-between py-3 px-4 md:px-0">
+      {/* layout: smaller author name, nav close to name */}
+      <div className="container mx-auto flex flex-col sm:flex-row items-center justify-between py-2 px-3 gap-1 sm:gap-0">
         <Link
           to="/"
-          className="font-radley font-bold text-5xl md:text-7xl tracking-tight text-primary"
+          className="font-playfair font-bold text-2xl md:text-3xl tracking-tight text-primary"
           style={{ letterSpacing: "0.04em" }}
         >
           J.C. Amerine
         </Link>
-        <nav aria-label="Site">
-          <ul className="flex flex-wrap gap-4 md:gap-6 font-medium">
+        <nav aria-label="Site" className="mt-1 sm:mt-0 sm:ml-6">
+          <ul className="flex flex-wrap gap-3 md:gap-4 font-medium">
             {NAV_LINKS.map((nav) => (
               <li key={nav.path}>
                 <Link
@@ -45,3 +46,4 @@ const SiteHeader = () => {
 };
 
 export default SiteHeader;
+
