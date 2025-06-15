@@ -3,7 +3,7 @@ import SiteHeader from "@/components/SiteHeader";
 import PageBanner from "@/components/PageBanner";
 import Footer from "@/components/Footer";
 import NewsletterSection from "@/components/NewsletterSection";
-import { Tiktok, Instagram } from "lucide-react";
+import { tiktok, Instagram } from "lucide-react";
 
 const ICON_STYLE =
   "inline-block mx-1 align-middle transition hover:scale-110 hover:text-primary";
@@ -31,7 +31,7 @@ const Contact = () => (
               hello@jcamerine.com
             </a>
             <a href="#" aria-label="TikTok" className={ICON_STYLE}>
-              <Tiktok size={22} color="black" strokeWidth={2} />
+              {tiktok({ size: 22, color: "black", strokeWidth: 2 })}
             </a>
             <a href="#" aria-label="Instagram" className={ICON_STYLE}>
               <Instagram size={22} color="black" strokeWidth={2} />
@@ -49,4 +49,3 @@ const Contact = () => (
 );
 
 export default Contact;
-
