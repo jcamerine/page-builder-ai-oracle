@@ -13,7 +13,10 @@ const Home = () => {
       <AuthorHero />
       <nav className="sticky top-0 z-30 bg-background/90 border-b border-border backdrop-blur-md shadow-sm">
         <div className="container mx-auto flex flex-wrap items-center justify-between py-3">
-          <span className="font-handwriting text-4xl md:text-5xl tracking-tight text-primary" style={{letterSpacing: "0.04em"}}>
+          <span
+            className="font-playfair font-bold text-5xl md:text-6xl tracking-tight text-primary"
+            style={{ letterSpacing: "0.04em" }}
+          >
             J.C. Amerine
           </span>
           <ul className="flex space-x-6 font-medium">

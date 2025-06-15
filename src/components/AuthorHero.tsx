@@ -13,15 +13,12 @@ const AuthorHero = () => (
     <div className="flex flex-col items-center justify-center text-center text-white drop-shadow-lg space-y-4">
       <span className="uppercase tracking-widest text-sm md:text-lg font-semibold">Epic Fantasy Romance</span>
       <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold font-serif animate-fade-in">
-        The Aeonaros Saga
+        Aeonaros
       </h1>
       <p className="max-w-lg md:max-w-xl text-lg md:text-2xl mt-4 font-medium">
         Discover the worlds of love and war, magic and secrets. New Readers and Epic Romance fans welcome.
       </p>
-      {/* Removed "Books available at:" */}
-      <div className="mt-6 flex flex-col items-center gap-2">
-        <SocialIcons large />
-      </div>
+      {/* Removed SocialIcons from top banner */}
     </div>
     <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-background/70" aria-hidden="true" />
   </header>
