@@ -40,8 +40,8 @@ const BANNERS = [
     subtitle: "You can edit this banner later to add more highlights or info.",
     gradient: "bg-gradient-to-br from-gray-800 via-gray-900/80 to-blue-900",
     gif: "https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?auto=format&fit=crop&w=1200&q=80",
-    minHeight: 150,
-    heightClass: "h-[32vh] md:h-[28vh]",
+    minHeight: 300,
+    heightClass: "h-[55vh] md:h-[60vh]",
     editable: true,
   },
 ];
