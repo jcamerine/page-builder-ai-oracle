@@ -72,7 +72,7 @@ const Banner = ({
   editable?: boolean;
 }) => (
   <section
-    className={`relative w-full flex flex-col items-center justify-center mb-10 rounded-xl shadow-xl overflow-hidden animate-fade-in ${gradient} ${heightClass ?? ""}`}
+    className={`relative w-full flex flex-col items-center justify-center mb-0 rounded-xl shadow-xl overflow-hidden animate-fade-in ${gradient} ${heightClass ?? ""}`}
     style={{ minHeight }}
   >
     <img
