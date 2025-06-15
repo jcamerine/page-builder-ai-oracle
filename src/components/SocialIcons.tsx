@@ -1,5 +1,5 @@
 
-import { tiktok, instagram } from "lucide-react"; // lower-case icon names for Lucide v0.462.0
+import { Instagram } from "lucide-react";
 
 interface SocialIconsProps {
   large?: boolean;
@@ -8,7 +8,6 @@ interface SocialIconsProps {
 const SocialIcons = ({ large }: SocialIconsProps) => {
   const iconClass = large ? "w-12 h-12" : "w-7 h-7";
   const iconColor = "#222"; // Black/near-black
-  const iconColorHover = "#000"; // Pure black for hover
 
   return (
     <div className="flex gap-3 items-center">
@@ -38,7 +37,7 @@ const SocialIcons = ({ large }: SocialIconsProps) => {
           <text x="12" y="15" fontSize="8" fill="white" textAnchor="middle" fontFamily="Georgia">g</text>
         </svg>
       </a>
-      {/* TikTok */}
+      {/* TikTok (inline SVG) */}
       <a
         href="https://tiktok.com/"
         rel="noopener noreferrer"
@@ -47,7 +46,13 @@ const SocialIcons = ({ large }: SocialIconsProps) => {
         className={`group rounded-full bg-white hover:bg-gray-200 border border-gray-300 p-2 shadow transition ${iconClass}`}
         title="TikTok"
       >
-        {tiktok({ className: iconClass, color: iconColor })}
+        {/* Simple TikTok logo (monochrome, minimal for demo) */}
+        <svg className={iconClass} viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path
+            d="M15 3a1 1 0 0 0-1 1v10.5a2.5 2.5 0 1 1-2.5-2.5.75.75 0 0 0 0-1.5A4 4 0 1 0 15 19V7.18c.29.12.6.21.92.25A5.6 5.6 0 0 0 19 7v-2a1 1 0 0 0-1-1h-3Z"
+            fill={iconColor}
+          />
+        </svg>
       </a>
       {/* Instagram */}
       <a
@@ -58,11 +63,10 @@ const SocialIcons = ({ large }: SocialIconsProps) => {
         className={`group rounded-full bg-white hover:bg-gray-200 border border-gray-300 p-2 shadow transition ${iconClass}`}
         title="Instagram"
       >
-        {instagram({ className: iconClass, color: iconColor })}
+        <Instagram className={iconClass} color={iconColor} />
       </a>
     </div>
   );
 };
 
 export default SocialIcons;
-
