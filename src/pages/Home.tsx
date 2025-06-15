@@ -127,7 +127,7 @@ const Home = () => {
       <NewsletterSection />
       {/* Footer stays at the bottom */}
       <footer className="bg-background mt-12 py-8 border-t border-border text-center text-sm text-muted-foreground">
-        &copy; {new Date().getFullYear()} J.C. Amerine. All Rights Reserved. | jcamerine.com | jcamerine.com.au
+        &copy; {new Date().getFullYear()} J.C. Amerine. All Rights Reserved.
       </footer>
     </main>
   );
