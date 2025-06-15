@@ -107,7 +107,7 @@ const Home = () => {
       <NewsletterDialog />
       <SiteHeader />
       {/* Animated banners directly below the heading */}
-      <div className="w-full flex flex-col gap-8 my-8">
+      <div className="w-full flex flex-col gap-0">
         {BANNERS.map((banner) => (
           <Banner
             key={banner.key}
