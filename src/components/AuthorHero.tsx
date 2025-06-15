@@ -18,8 +18,8 @@ const AuthorHero = () => (
       <p className="max-w-lg md:max-w-xl text-lg md:text-2xl mt-4 font-medium">
         Discover the worlds of love and war, magic and secrets. New Readers and Epic Romance fans welcome.
       </p>
+      {/* Removed "Books available at:" */}
       <div className="mt-6 flex flex-col items-center gap-2">
-        <span className="text-base font-semibold">Books available at:</span>
         <SocialIcons large />
       </div>
     </div>
