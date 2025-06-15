@@ -1,4 +1,3 @@
-
 import SiteHeader from "@/components/SiteHeader";
 import PageBanner from "@/components/PageBanner";
 import SocialIcons from "@/components/SocialIcons";
@@ -25,10 +24,10 @@ const Books = () => (
           </div>
           <h3 className="text-2xl font-semibold mb-1 text-center uppercase">The Knight&apos;s Facade</h3>
           <span className="text-base text-accent-foreground mb-2 font-semibold uppercase">Book 1 • Out Now</span>
-          <p className="mb-4 text-center text-base text-muted-foreground">
+          <p className="mb-4 text-center text-base text-muted-foreground min-h-[64px] flex items-center justify-center">
             A reluctant knight and a secretive princess must unite to save a realm consumed by ancient magic and warring hearts.
           </p>
-          <div className="flex gap-4">
+          <div className="flex gap-4 mt-auto">
             <a
               href="https://www.amazon.com/"
               target="_blank"
@@ -54,10 +53,10 @@ const Books = () => (
           </div>
           <h3 className="text-2xl font-semibold mb-1 text-center uppercase">A Trio of Flames</h3>
           <span className="text-base text-accent-foreground mb-2 font-semibold uppercase">Book 2 • Pre-Order</span>
-          <p className="mb-4 text-center text-base text-muted-foreground">
+          <p className="mb-4 text-center text-base text-muted-foreground min-h-[64px] flex items-center justify-center">
             Three destinies intertwine in a cataclysm of love, betrayal, and fire—pre-order the next chapter of the saga!
           </p>
-          <div className="flex gap-4">
+          <div className="flex gap-4 mt-auto">
             <a
               href="https://www.amazon.com/"
               target="_blank"
