@@ -1,6 +1,7 @@
 
 import SiteHeader from "@/components/SiteHeader";
 import PageBanner from "@/components/PageBanner";
+import Footer from "@/components/Footer";
 
 const News = () => (
   <main className="min-h-screen flex flex-col bg-background">
@@ -23,6 +24,7 @@ const News = () => (
         </div>
       </section>
     </div>
+    <Footer />
   </main>
 );
 

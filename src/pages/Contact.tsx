@@ -1,6 +1,7 @@
 
 import SiteHeader from "@/components/SiteHeader";
 import PageBanner from "@/components/PageBanner";
+import Footer from "@/components/Footer";
 
 const Contact = () => (
   <main className="min-h-screen flex flex-col bg-background">
@@ -31,6 +32,7 @@ const Contact = () => (
         </div>
       </section>
     </div>
+    <Footer />
   </main>
 );
 
