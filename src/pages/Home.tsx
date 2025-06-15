@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import SiteHeader from "@/components/SiteHeader";
 
 // List of nav routes; remains the same as before
 const NAV_LINKS = [
@@ -45,30 +46,7 @@ const Banner = ({
 const Home = () => {
   return (
     <main className="min-h-screen bg-background text-foreground font-sans flex flex-col">
-      {/* Author name/Heading at the very top */}
-      <nav className="sticky top-0 z-30 bg-background/90 border-b border-border backdrop-blur-md shadow-sm">
-        <div className="container mx-auto flex flex-wrap items-center justify-between py-3">
-          <span
-            className="font-radley font-bold text-5xl md:text-7xl tracking-tight text-primary"
-            style={{ letterSpacing: "0.04em" }}
-          >
-            J.C. Amerine
-          </span>
-          <ul className="flex space-x-6 font-medium">
-            {NAV_LINKS.map((nav) => (
-              <li key={nav.path}>
-                <Link
-                  to={nav.path}
-                  className="hover:text-primary hover:underline"
-                >
-                  {nav.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </nav>
-
+      <SiteHeader />
       {/* Animated banners directly below the heading */}
       <div className="w-full flex flex-col gap-8 my-8">
         {/* First Banner: Welcome */}
