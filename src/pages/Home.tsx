@@ -1,99 +1,95 @@
-import AuthorHero from "@/components/AuthorHero";
-import BooksSection from "@/components/BooksSection";
-import AboutSection from "@/components/AboutSection";
-import PreOrderSection from "@/components/PreOrderSection";
-import NewsletterSection from "@/components/NewsletterSection";
-import ContactSection from "@/components/ContactSection";
-import SocialIcons from "@/components/SocialIcons";
+
+const Banner = ({
+  title,
+  subtitle,
+  gradient,
+  children,
+}: {
+  title: string;
+  subtitle?: string;
+  gradient: string;
+  children?: React.ReactNode;
+}) => (
+  <section
+    className={`relative w-full h-[55vh] md:h-[60vh] flex flex-col items-center justify-center mb-10 ${gradient} animate-fade-in rounded-xl shadow-xl overflow-hidden`}
+    style={{ minHeight: 300 }}
+  >
+    <div className="z-10 text-center px-6">
+      <h1 className="text-5xl md:text-7xl font-radley font-bold drop-shadow-lg text-white mb-4 whitespace-pre-line">
+        {title}
+      </h1>
+      {subtitle && (
+        <h2 className="text-2xl md:text-3xl text-white font-serif font-medium drop-shadow-md mb-2 animate-fade-in">
+          {subtitle}
+        </h2>
+      )}
+      {children}
+    </div>
+    <div className="absolute inset-0" aria-hidden="true" />
+  </section>
+);
+
+import { Link } from "react-router-dom";
+
+const NAV_LINKS = [
+  { label: "Home", path: "/" },
+  { label: "About", path: "/about" },
+  { label: "Books", path: "/books" },
+  { label: "Aeonaros", path: "/aeonaros" },
+  { label: "Store", path: "/store" },
+  { label: "News", path: "/news" },
+  { label: "Contact", path: "/contact" },
+];
 
 const Home = () => {
   return (
     <main className="min-h-screen bg-background text-foreground font-sans flex flex-col">
-      <AuthorHero />
+      {/* First Banner: Welcome */}
+      <Banner
+        title="Welcome Readers!"
+        subtitle="Enter the world of J.C. Amerine"
+        gradient="bg-gradient-to-tr from-blue-800 via-purple-900 to-cyan-600"
+      />
 
-      {/* CTA for newsletter signup */}
-      <div className="flex items-center justify-center bg-secondary py-4 shadow-sm border-b border-border">
-        <a
-          href="/newsletter"
-          className="bg-primary text-primary-foreground font-semibold rounded-lg px-6 py-3 text-lg shadow hover:bg-primary/90 transition-colors"
-        >
-          Get Free Chapters &amp; Updates
-        </a>
-      </div>
+      {/* Second Banner: Epic Fantasy Theme */}
+      <Banner
+        title="Step Into Epic Fantasy"
+        subtitle="Magic, Romance & Adventure Await"
+        gradient="bg-gradient-to-br from-indigo-900 via-pink-700/80 to-yellow-700"
+      >
+        <div className="flex justify-center mt-4 space-x-4">
+          <Link
+            to="/newsletter"
+            className="bg-primary text-primary-foreground font-semibold text-lg px-7 py-3 rounded-xl shadow-lg transition hover:bg-primary/90 animate-pulse"
+          >
+            Get Free Chapters &amp; Updates
+          </Link>
+        </div>
+      </Banner>
 
+      {/* Updated Navbar */}
       <nav className="sticky top-0 z-30 bg-background/90 border-b border-border backdrop-blur-md shadow-sm">
         <div className="container mx-auto flex flex-wrap items-center justify-between py-3">
           <span
-            className="font-playfair font-bold text-5xl md:text-6xl tracking-tight text-primary"
+            className="font-radley font-bold text-5xl md:text-7xl tracking-tight text-primary"
             style={{ letterSpacing: "0.04em" }}
           >
             J.C. Amerine
           </span>
           <ul className="flex space-x-6 font-medium">
-            <li>
-              <a href="#home" className="hover:text-primary hover:underline">Home</a>
-            </li>
-            <li>
-              <a href="#about" className="hover:text-primary hover:underline">About</a>
-            </li>
-            <li>
-              <a href="#books" className="hover:text-primary hover:underline">Books</a>
-            </li>
-            <li>
-              <a href="#aeonaros" className="hover:text-primary hover:underline">Aeonaros</a>
-            </li>
-            <li>
-              <a href="#store" className="hover:text-primary hover:underline">Store</a>
-            </li>
-            <li>
-              <a href="#news" className="hover:text-primary hover:underline">News</a>
-            </li>
-            <li>
-              <a href="#contact" className="hover:text-primary hover:underline">Contact</a>
-            </li>
+            {NAV_LINKS.map((nav) => (
+              <li key={nav.path}>
+                <Link
+                  to={nav.path}
+                  className="hover:text-primary hover:underline"
+                >
+                  {nav.label}
+                </Link>
+              </li>
+            ))}
           </ul>
-          <SocialIcons />
         </div>
       </nav>
-      {/* Add an id="home" anchor for Home navigation */}
-      <div id="home"></div>
-
-      {/* Home Section (subheading) */}
-      <section className="container mx-auto py-14 px-4 max-w-4xl animate-fade-in">
-        <h2 className="text-3xl font-bold font-serif mb-4">Home</h2>
-        <p className="text-base text-muted-foreground">
-          Welcome to the official website of J.C. Amerine, author of epic fantasy romance novels. Explore worlds of love and war, magic and secrets, and dive into the Aeonaros saga and other captivating stories.
-        </p>
-      </section>
-
-      <AboutSection />
-
-      {/* Books Section */}
-      <section id="books" className="container mx-auto py-16 px-4 max-w-4xl animate-fade-in">
-        <h2 className="text-3xl font-bold font-serif mb-4">Books</h2>
-        <BooksSection />
-      </section>
-
-      {/* Aeonaros saga section */}
-      <section id="aeonaros" className="container mx-auto py-16 px-4 max-w-4xl animate-fade-in">
-        <h2 className="text-3xl font-bold font-serif mb-4">Aeonaros</h2>
-        {/* The BooksSection already renders with heading "Aeonaros" */}
-        {/* If you want to add details about the Aeonaros saga here, you can add them later. */}
-      </section>
-
-      {/* Store Section */}
-      <section id="store" className="container mx-auto py-16 px-4 max-w-4xl animate-fade-in">
-        <h2 className="text-3xl font-bold font-serif mb-4">Store</h2>
-        <p className="text-base text-muted-foreground">Coming soon: Shop for books, merchandise, and more.</p>
-      </section>
-
-      {/* News section - replaces NewsletterSection */}
-      <section id="news" className="container mx-auto py-16 px-4 max-w-2xl animate-fade-in">
-        <h2 className="text-2xl font-semibold font-serif text-center mb-2">News</h2>
-        <NewsletterSection />
-      </section>
-
-      <ContactSection />
       <footer className="bg-background mt-12 py-8 border-t border-border text-center text-sm text-muted-foreground">
         &copy; {new Date().getFullYear()} J.C. Amerine. All Rights Reserved. | jcamerine.com | jcamerine.com.au
       </footer>
