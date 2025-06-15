@@ -71,7 +71,6 @@ const Banner = ({
     className={`relative w-full flex flex-col items-center justify-center mb-10 rounded-xl shadow-xl overflow-hidden animate-fade-in ${gradient} ${heightClass ?? ""}`}
     style={{ minHeight }}
   >
-    {/* Background image or GIF */}
     <img
       src={gif}
       alt=""
@@ -80,20 +79,17 @@ const Banner = ({
       loading="lazy"
       aria-hidden="true"
     />
-    {/* Backdrop gradient overlay for readability */}
     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent z-[1]" aria-hidden="true" />
-    {/* Banner Content */}
     <div className="z-10 text-center px-6 relative">
-      <h1 className="text-5xl md:text-7xl font-radley font-bold drop-shadow-lg text-white mb-4 whitespace-pre-line">
+      <h1 className="text-5xl md:text-7xl font-playfair font-bold drop-shadow-lg text-white mb-4 whitespace-pre-line uppercase tracking-wider">
         {title}
       </h1>
       {subtitle && (
-        <h2 className="text-2xl md:text-3xl text-white font-serif font-medium drop-shadow-md mb-2 animate-fade-in">
+        <h2 className="text-2xl md:text-3xl text-white font-playfair font-semibold drop-shadow-md mb-2 animate-fade-in uppercase tracking-wide">
           {subtitle}
         </h2>
       )}
       {children}
-      {/* Optionally display edit note */}
       {editable && (
         <div className="mt-2 text-xs text-white/80 italic">[Edit this banner text or image to personalize]</div>
       )}

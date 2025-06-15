@@ -2,7 +2,7 @@ import SocialIcons from "@/components/SocialIcons";
 
 const BooksSection = () => (
   <section id="aeonaros" className="container mx-auto py-16 px-4 max-w-5xl animate-fade-in">
-    <h2 className="text-3xl font-bold font-serif mb-8">Aeonaros</h2>
+    <h2 className="text-3xl font-bold font-playfair mb-8 uppercase tracking-wider">Aeonaros</h2>
     <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
       {/* Book 1 */}
       <div className="bg-card rounded-xl shadow-md p-6 flex flex-col items-center border hover:shadow-lg transition-shadow duration-200">

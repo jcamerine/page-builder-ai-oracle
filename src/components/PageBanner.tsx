@@ -1,4 +1,3 @@
-
 import React from "react";
 
 interface PageBannerProps {
@@ -29,11 +28,11 @@ const PageBanner: React.FC<PageBannerProps> = ({
     />
     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent z-[1]" aria-hidden="true" />
     <div className="z-10 text-center px-6 relative mx-auto max-w-2xl">
-      <h1 className="text-4xl md:text-5xl font-playfair font-bold text-white drop-shadow-lg mb-2">
+      <h1 className="text-4xl md:text-5xl font-playfair font-bold text-white drop-shadow-lg mb-2 uppercase tracking-wider">
         {title}
       </h1>
       {subtitle && (
-        <h2 className="text-xl md:text-2xl text-white font-serif font-medium drop-shadow-md mb-1">
+        <h2 className="text-xl md:text-2xl text-white font-playfair font-semibold drop-shadow-md mb-1 uppercase tracking-wide">
           {subtitle}
         </h2>
       )}
