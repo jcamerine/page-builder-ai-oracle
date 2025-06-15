@@ -1,9 +1,9 @@
-
 import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { toast } from "@/hooks/use-toast";
 import { Link } from "react-router-dom";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 const NewsletterSignupPage = () => {
   const [email, setEmail] = useState("");
@@ -56,6 +56,7 @@ const NewsletterSignupPage = () => {
           </Link>
         </div>
       </div>
+      <ScrollToTopButton />
     </main>
   );
 };

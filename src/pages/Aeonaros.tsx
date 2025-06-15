@@ -1,5 +1,5 @@
-
 import SiteHeader from "@/components/SiteHeader";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 const Aeonaros = () => (
   <main className="min-h-screen flex flex-col bg-background">
@@ -13,6 +13,7 @@ const Aeonaros = () => (
         </div>
       </section>
     </div>
+    <ScrollToTopButton />
   </main>
 );
 

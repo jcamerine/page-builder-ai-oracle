@@ -3,6 +3,7 @@ import PageBanner from "@/components/PageBanner";
 import SocialIcons from "@/components/SocialIcons";
 import Footer from "@/components/Footer";
 import NewsletterSection from "@/components/NewsletterSection";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 const Books = () => (
   <main className="min-h-screen bg-background flex flex-col">
@@ -81,6 +82,7 @@ const Books = () => (
     </div>
     <NewsletterSection />
     <Footer />
+    <ScrollToTopButton />
   </main>
 );
 

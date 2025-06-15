@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import SiteHeader from "@/components/SiteHeader";
 import NewsletterDialog from "@/components/NewsletterDialog";
 import NewsletterSection from "@/components/NewsletterSection";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 // You can edit these banner configs to change their titles or backgrounds in the future
 const BANNERS = [
@@ -125,6 +126,7 @@ const Home = () => {
       <footer className="bg-background mt-12 py-8 border-t border-border text-center text-sm text-muted-foreground">
         &copy; {new Date().getFullYear()} J.C. Amerine. All Rights Reserved.
       </footer>
+      <ScrollToTopButton />
     </main>
   );
 };
