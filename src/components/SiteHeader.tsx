@@ -14,8 +14,8 @@ const SiteHeader = () => {
   const location = useLocation();
   return (
     <header className="sticky top-0 z-30 bg-background/95 border-b border-border backdrop-blur-md shadow-sm">
-      {/* layout: smaller author name, nav close to name */}
-      <div className="container mx-auto flex flex-col sm:flex-row items-center justify-between py-2 px-3 gap-1 sm:gap-0">
+      {/* layout: author name & nav aligned side by side, left-aligned */}
+      <div className="container mx-auto flex flex-row items-center py-2 px-3 gap-3">
         <Link
           to="/"
           className="font-playfair font-bold text-2xl md:text-3xl tracking-tight text-primary"
@@ -23,7 +23,7 @@ const SiteHeader = () => {
         >
           J.C. Amerine
         </Link>
-        <nav aria-label="Site" className="mt-1 sm:mt-0 sm:ml-6">
+        <nav aria-label="Site">
           <ul className="flex flex-wrap gap-3 md:gap-4 font-medium">
             {NAV_LINKS.map((nav) => (
               <li key={nav.path}>
