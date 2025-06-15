@@ -1,4 +1,6 @@
 
+import SocialIcons from "./SocialIcons";
+
 const ContactSection = () => (
   <section id="contact" className="container mx-auto py-16 px-4 max-w-2xl animate-fade-in">
     <h2 className="text-2xl font-semibold font-serif text-center mb-2">Contact</h2>

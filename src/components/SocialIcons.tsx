@@ -1,5 +1,5 @@
 
-import { youtube } from "lucide-react";
+// Removed: import { youtube } from "lucide-react";
 
 interface SocialIconsProps {
   large?: boolean;
