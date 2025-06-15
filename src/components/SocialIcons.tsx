@@ -15,11 +15,12 @@ const SocialIcons = ({ large }: SocialIconsProps) => {
      `;
 
   // Set highly visible, contrasting external icon for all links that open in new tab
+  // FIX: aria-hidden should be Booleanish (boolean or 'true'/'false' string), not type string
   const externalIconProps = (bg: string) => ({
     size: large ? 20 : 14,
     className: "ml-1",
     color: bg === "dark" ? "#FFF" : "#111",
-    "aria-hidden": "true",
+    "aria-hidden": true as const,
   });
 
   return (
@@ -61,7 +62,6 @@ const SocialIcons = ({ large }: SocialIconsProps) => {
         className={`${baseLinkClass} bg-white border-gray-300 text-black hover:bg-gray-200`}
         title="TikTok"
       >
-        {/* Realistic TikTok icon */}
         <svg className={iconClass} viewBox="0 0 48 48" fill="none" aria-hidden="true">
           <g>
             <rect width="48" height="48" rx="24" fill="#fff"/>
@@ -92,4 +92,3 @@ const SocialIcons = ({ large }: SocialIconsProps) => {
 };
 
 export default SocialIcons;
-
