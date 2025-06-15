@@ -1,28 +1,17 @@
-
 import SiteHeader from "@/components/SiteHeader";
-import SlideshowBanner from "@/components/SlideshowBanner";
+import PageBanner from "@/components/PageBanner";
 import Footer from "@/components/Footer";
 import NewsletterSection from "@/components/NewsletterSection";
-
-const aboutSlides = [
-  {
-    imageUrl: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1200&q=80",
-    imageAlt: "Foggy mountain vista",
-    title: "About J.C. Amerine",
-    subtitle: "Discover the journey and worldbuilding of an epic fantasy author",
-  },
-  {
-    imageUrl: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80",
-    imageAlt: "Another writing moment",
-    title: "More to Come Soon",
-    subtitle: "Unveiling the full story and inspirations",
-  },
-];
 
 const About = () => (
   <main className="min-h-screen bg-background flex flex-col">
     <SiteHeader />
-    <SlideshowBanner slides={aboutSlides} />
+    <PageBanner
+      title="About J.C. Amerine"
+      subtitle="Discover the journey and worldbuilding of an epic fantasy author"
+      imageUrl="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1200&q=80"
+      imageAlt="Foggy mountain vista"
+    />
     <div className="flex flex-col items-center justify-center flex-1 py-10">
       <section className="max-w-2xl w-full mx-auto animate-fade-in px-6">
         <div className="text-lg text-muted-foreground mb-4 text-center">

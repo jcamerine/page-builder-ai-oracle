@@ -1,29 +1,18 @@
-
 import SiteHeader from "@/components/SiteHeader";
-import SlideshowBanner from "@/components/SlideshowBanner";
+import PageBanner from "@/components/PageBanner";
 import SocialIcons from "@/components/SocialIcons";
 import Footer from "@/components/Footer";
 import NewsletterSection from "@/components/NewsletterSection";
 
-const bookSlides = [
-  {
-    imageUrl: "https://images.unsplash.com/photo-1426604966848-d7adac402bff?auto=format&fit=crop&w=1200&q=80",
-    imageAlt: "Mountain landscape for books collection",
-    title: "Books by J.C. Amerine",
-    subtitle: "Epic Fantasy Romance Books • The Aeonaros Saga",
-  },
-  {
-    imageUrl: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80",
-    imageAlt: "Bookshelf closeup",
-    title: "Coming Soon",
-    subtitle: "Next adventure in the Aeonaros Saga awaits",
-  },
-];
-
 const Books = () => (
   <main className="min-h-screen bg-background flex flex-col">
     <SiteHeader />
-    <SlideshowBanner slides={bookSlides} />
+    <PageBanner
+      title="Books by J.C. Amerine"
+      subtitle="Epic Fantasy Romance Books • The Aeonaros Saga"
+      imageUrl="https://images.unsplash.com/photo-1426604966848-d7adac402bff?auto=format&fit=crop&w=1200&q=80"
+      imageAlt="Mountain landscape for books collection"
+    />
     <div className="flex flex-col items-center flex-1 py-10">
       <section className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl w-full px-4 animate-fade-in">
         {/* Book 1 */}

@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import SiteHeader from "@/components/SiteHeader";
 import NewsletterDialog from "@/components/NewsletterDialog";
 import NewsletterSection from "@/components/NewsletterSection";
-import SlideshowBanner from "@/components/SlideshowBanner";
 
 // You can edit these banner configs to change their titles or backgrounds in the future
 const BANNERS = [
@@ -102,57 +101,31 @@ const Banner = ({
   </section>
 );
 
-const SLIDESHOWS = [
-  [
-    {
-      imageUrl: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1200&q=80",
-      title: "Welcome Readers!",
-      subtitle: "Enter the world of J.C. Amerine",
-    },
-    {
-      imageUrl: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=facearea&w=1200&h=500&q=80",
-      title: "Your Next Adventure Awaits",
-      subtitle: "Epic journeys and magical stories",
-    },
-  ],
-  [
-    {
-      imageUrl: "https://images.unsplash.com/photo-1426604966848-d7adac402bff?auto=format&fit=crop&w=1200&q=80",
-      title: "Step Into Epic Fantasy",
-      subtitle: "Magic, Romance & Adventure Await",
-    },
-    {
-      imageUrl: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
-      title: "Behind the Lore",
-      subtitle: "Explore exclusive worlds and characters",
-    },
-  ],
-  [
-    {
-      imageUrl: "https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?auto=format&fit=crop&w=1200&q=80",
-      title: "[Future Banner Placeholder]",
-      subtitle: "You can edit this banner later to add more highlights or info.",
-    },
-    {
-      imageUrl: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=1200&q=80",
-      title: "Coming Soon",
-      subtitle: "Stay tuned for more updates on the journey.",
-    },
-  ],
-];
-
 const Home = () => {
   return (
     <main className="min-h-screen bg-background text-foreground font-sans flex flex-col">
       <NewsletterDialog />
       <SiteHeader />
-      {/* Animated banners now as slideshows */}
+      {/* Animated banners directly below the heading */}
       <div className="w-full flex flex-col gap-8 my-8">
-        {SLIDESHOWS.map((slides, idx) => (
-          <SlideshowBanner key={idx} slides={slides} heightClass="h-[55vh] md:h-[60vh]" />
+        {BANNERS.map((banner) => (
+          <Banner
+            key={banner.key}
+            title={banner.title}
+            subtitle={banner.subtitle}
+            gradient={banner.gradient}
+            gif={banner.gif}
+            minHeight={banner.minHeight}
+            heightClass={banner.heightClass}
+            editable={banner.editable}
+          >
+            {banner.children}
+          </Banner>
         ))}
       </div>
+      {/* Add big newsletter section here */}
       <NewsletterSection />
+      {/* Footer stays at the bottom */}
       <footer className="bg-background mt-12 py-8 border-t border-border text-center text-sm text-muted-foreground">
         &copy; {new Date().getFullYear()} J.C. Amerine. All Rights Reserved. | jcamerine.com | jcamerine.com.au
       </footer>
