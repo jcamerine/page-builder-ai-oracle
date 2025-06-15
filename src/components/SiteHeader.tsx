@@ -1,4 +1,3 @@
-
 import { Link, useLocation } from "react-router-dom";
 
 const NAV_LINKS = [
@@ -15,7 +14,7 @@ const SiteHeader = () => {
   return (
     <header className="sticky top-0 z-30 bg-background/95 border-b border-border backdrop-blur-md shadow-sm">
       {/* layout: author name & nav aligned side by side, left-aligned */}
-      <div className="container mx-auto flex flex-row items-center py-2 px-3 gap-3">
+      <div className="container mx-auto flex flex-row items-center py-2 px-3 gap-8 md:gap-12">
         <Link
           to="/"
           className="font-playfair font-bold text-2xl md:text-3xl tracking-tight text-primary"
@@ -46,4 +45,3 @@ const SiteHeader = () => {
 };
 
 export default SiteHeader;
-

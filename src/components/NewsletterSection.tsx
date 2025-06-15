@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -20,7 +19,7 @@ const NewsletterSection = () => {
 
   return (
     <section id="news" className="container mx-auto py-16 px-4 max-w-2xl animate-fade-in">
-      <h2 className="text-2xl font-semibold font-serif text-center mb-2">News</h2>
+      <h2 className="text-2xl font-semibold font-serif text-center mb-2">Join The Newsletter</h2>
       <p className="mb-6 text-center text-muted-foreground">
         Be first to read new chapters, get world lore, and receive book news direct to your inbox!
       </p>
